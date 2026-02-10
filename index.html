@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Name</title>
@@ -12,15 +13,26 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #ff8989;
         }
         h1 {
             font-size: 3rem;
             color: #333;
         }
     </style>
+    <a href="">Clickable Text<br></br></a>
 </head>
 <body>
-    <h1>My name is: Insert name here</h1>
+    <!-- Page heading -->
+    <h1>Picture Switcher</h1>
+
+    <!-- Image element that will display the pictures -->
+    <img id="displayedImage" alt="Picture switcher image">
+
+    <!-- Button to switch between images -->
+    <button id="switchButton">Switch Picture</button>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
