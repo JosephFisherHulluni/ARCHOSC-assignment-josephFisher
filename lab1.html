@@ -4,36 +4,47 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Name</title>
+    <title>Joseph Fisher ARCHOSC lab 1</title>
     <style>
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items:center;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #ff8989;
+            background-color: #ffbfec;
+            
         }
+        
         h1 {
-            font-size: 3rem;
+            font-size: 1.5rem;
             color: #333;
+            position: fixed;
+            bottom:50%;
+        }
+        h2{
+            position:fixed;
+            bottom: 10%;
         }
     </style>
-    <a href="">Clickable Text<br></br></a>
+    <!--i chose muted pink background because its a grippy colour but not overly expressive -->
 </head>
 <body>
     <!-- Page heading -->
     <h1>
 
-    <p>eeee<br></br></p></h1>
+    <p>In the below image,<br></br>you can see that during lab 1:</p>
+    <p id="labtext">I cloned the base repository from github...</p></h1>
     <!-- Image element that will display the pictures -->
-    <img id="displayedImagelab1" alt="Picture switcher image">
-
+     <h2>
+    <p><img id="displayedImagelab1"></p>
+    
     <!-- Button to switch between images -->
-    <button id="switchButton">Switch Picture</button>
-
+    <button id="switchButton">Next!</button>
+    <a href="index.html">Return to contents</a>
+    </h2>
     <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+    <script src="lab1.js"></script>
 </body>
 </html>
