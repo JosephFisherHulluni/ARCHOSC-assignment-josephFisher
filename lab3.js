@@ -2,19 +2,25 @@
 let showingFirstImage = 0;
 
 // Get references to HTML elements
-const displayedImagelab1 = document.getElementById("displayedImagelab1");
 const switchButton = document.getElementById("switchButton")
-// Set the initial image when the page loads
-displayedImagelab1.src = "pictures/yml stuff.png";
+const displayedImage = document.getElementById("displayedImagelab1");
+displayedImage.src="pictures/128da28f370af0a0a73c993ffbeeabd0.PNG";
+displayedImage.style.height="0px";
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "a" || event.key === "A") {
+        displayedImage.style.height="500px";
+    }
+});
+
 
 switchButton.addEventListener("click", function () {
 
     showingFirstImage++;
     // Check which image is currently displayed and switch
     switch (showingFirstImage){
-    case 1: displayedImagelab1.src="pictures/Screenshot 2026-03-03 123848.png"; document.getElementById("labtext").innerHTML="...to push a version of the website to a github VM when i commit a new version..."; break;
-    case 2: displayedImagelab1.src="pictures/Screenshot 2026-01-27 105552.png"; document.getElementById("labtext").innerHTML="...then I took a premade screenshot..."; break;
-    case 3: displayedImagelab1.src="pictures/Screenshot 2026-01-27 110445.png";  document.getElementById("labtext").innerHTML="...remade it and then saved it..."; break;
-    case 4: displayedImagelab1.src="pictures/website pic.png";  document.getElementById("labtext").innerHTML="... after which i made a temporary demonstrative website which is now used as the contents page."; break;
-    case 5:  showingFirstImage=0; displayedImagelab1.src="pictures/git stuff.png";  document.getElementById("labtext").innerHTML="" break; break;
+    case 1: document.getElementById("labtext").innerHTML="...The lab's main priority was seeding the basics of this project,<br>wherein we were supposed to a html/css/js file that in effect says 'hey, this is me! i did ____'..."; break;
+    case 2: document.getElementById("labtext").innerHTML="...then explaining styles sheets for css, enabling the editing of fonts, colours etc; on the website..."; break;
+    case 3: document.getElementById("labtext").innerHTML="...and the final segment was attempting to explain navigation bars and user accessibility (such as a dark mode setting)<br><br>press A for a surprise by the way!"; break;
+    case 4: showingFirstImage=0;document.getElementById("labtext").innerHTML="However, a brief summation may help in believing I know the principles of the lab..."; break;
 }});
